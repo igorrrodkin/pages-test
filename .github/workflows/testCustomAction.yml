@@ -21,8 +21,6 @@ jobs:
       - name: Publish
         uses: AnatoliiYarovyi/test-custom-action@v0.0.10
         with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: test-react-cloudflare # e.g. 'my-project'
+          projectName: pages-test # e.g. 'my-project'
           directory: build # e.g. 'dist'
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
